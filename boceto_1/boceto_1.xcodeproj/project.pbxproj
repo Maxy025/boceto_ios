@@ -19,6 +19,7 @@
 		FB96437C2C9B359E00D0FF95 /* IUBoton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96437B2C9B359E00D0FF95 /* IUBoton.swift */; };
 		FB96437E2C9B368D00D0FF95 /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96437D2C9B368D00D0FF95 /* Cita.swift */; };
 		FB9643802C9B370400D0FF95 /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96437F2C9B370400D0FF95 /* generador_de_citas.swift */; };
+		FBCF31AA2C9DDB5D0098EA8A /* controladorVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF31A92C9DDB5D0098EA8A /* controladorVista.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FB96437B2C9B359E00D0FF95 /* IUBoton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUBoton.swift; sourceTree = "<group>"; };
 		FB96437D2C9B368D00D0FF95 /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB96437F2C9B370400D0FF95 /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
+		FBCF31A92C9DDB5D0098EA8A /* controladorVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controladorVista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				FB96437B2C9B359E00D0FF95 /* IUBoton.swift */,
 				FB96437D2C9B368D00D0FF95 /* Cita.swift */,
 				FB96437F2C9B370400D0FF95 /* generador_de_citas.swift */,
+				FBCF31A92C9DDB5D0098EA8A /* controladorVista.swift */,
 			);
 			path = modelo;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				FB96437C2C9B359E00D0FF95 /* IUBoton.swift in Sources */,
 				FB9643802C9B370400D0FF95 /* generador_de_citas.swift in Sources */,
+				FBCF31AA2C9DDB5D0098EA8A /* controladorVista.swift in Sources */,
 				FB96437E2C9B368D00D0FF95 /* Cita.swift in Sources */,
 				FB96434F2C9B2B5B00D0FF95 /* ViewController.swift in Sources */,
 				FB96434B2C9B2B5B00D0FF95 /* AppDelegate.swift in Sources */,
