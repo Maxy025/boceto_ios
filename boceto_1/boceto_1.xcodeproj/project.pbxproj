@@ -19,6 +19,7 @@
 		FB96437C2C9B359E00D0FF95 /* IUBoton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96437B2C9B359E00D0FF95 /* IUBoton.swift */; };
 		FB96437E2C9B368D00D0FF95 /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96437D2C9B368D00D0FF95 /* Cita.swift */; };
 		FB9643802C9B370400D0FF95 /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB96437F2C9B370400D0FF95 /* generador_de_citas.swift */; };
+		FBC9BCED2CA1C1ED0008E472 /* controlador_pantalla_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC9BCEC2CA1C1ED0008E472 /* controlador_pantalla_citas.swift */; };
 		FBCF31AA2C9DDB5D0098EA8A /* controladorVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCF31A92C9DDB5D0098EA8A /* controladorVista.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		FB96437B2C9B359E00D0FF95 /* IUBoton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUBoton.swift; sourceTree = "<group>"; };
 		FB96437D2C9B368D00D0FF95 /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB96437F2C9B370400D0FF95 /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
+		FBC9BCEC2CA1C1ED0008E472 /* controlador_pantalla_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_pantalla_citas.swift; sourceTree = "<group>"; };
 		FBCF31A92C9DDB5D0098EA8A /* controladorVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controladorVista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,8 @@
 		FB96433E2C9B2B5B00D0FF95 = {
 			isa = PBXGroup;
 			children = (
+				FBC9BCEB2CA1BFCB0008E472 /* controlador_de_vistas */,
+				FBC9BCE82CA1BF4A0008E472 /* controlador */,
 				FB9643492C9B2B5B00D0FF95 /* boceto_1 */,
 				FB9643602C9B2B5C00D0FF95 /* boceto_1Tests */,
 				FB96436A2C9B2B5C00D0FF95 /* boceto_1UITests */,
@@ -141,10 +145,25 @@
 			children = (
 				FB96437B2C9B359E00D0FF95 /* IUBoton.swift */,
 				FB96437D2C9B368D00D0FF95 /* Cita.swift */,
-				FB96437F2C9B370400D0FF95 /* generador_de_citas.swift */,
 				FBCF31A92C9DDB5D0098EA8A /* controladorVista.swift */,
 			);
 			path = modelo;
+			sourceTree = "<group>";
+		};
+		FBC9BCE82CA1BF4A0008E472 /* controlador */ = {
+			isa = PBXGroup;
+			children = (
+				FB96437F2C9B370400D0FF95 /* generador_de_citas.swift */,
+			);
+			path = controlador;
+			sourceTree = "<group>";
+		};
+		FBC9BCEB2CA1BFCB0008E472 /* controlador_de_vistas */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9BCEC2CA1C1ED0008E472 /* controlador_pantalla_citas.swift */,
+			);
+			path = controlador_de_vistas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +302,7 @@
 				FBCF31AA2C9DDB5D0098EA8A /* controladorVista.swift in Sources */,
 				FB96437E2C9B368D00D0FF95 /* Cita.swift in Sources */,
 				FB96434F2C9B2B5B00D0FF95 /* ViewController.swift in Sources */,
+				FBC9BCED2CA1C1ED0008E472 /* controlador_pantalla_citas.swift in Sources */,
 				FB96434B2C9B2B5B00D0FF95 /* AppDelegate.swift in Sources */,
 				FB96434D2C9B2B5B00D0FF95 /* SceneDelegate.swift in Sources */,
 			);

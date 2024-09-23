@@ -14,9 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBSegueAction func moviendome_de_pantalla(_ coder: NSCoder) -> UIViewController? {
-        return ControladorVistasCitas()
+    @IBSegueAction func al_abrir_pantalla_citas(_ coder: NSCoder) -> ControladorPantallaCita? {
+        return ControladorPantallaCita(muro_texto: "Pika chu", de_quien: "Pikachu", coder: coder)
     }
+
     
 }
 

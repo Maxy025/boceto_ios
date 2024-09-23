@@ -61,7 +61,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="V5a-hj-DZe" kind="showDetail" destinationCreationSelector="moviendome_de_pantalla:" id="WfH-Wr-e7q"/>
+                                            <segue destination="V5a-hj-DZe" kind="showDetail" destinationCreationSelector="al_abrir_pantalla_citas:" id="WfH-Wr-e7q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-4x-nX7">
@@ -121,102 +121,138 @@
                     <view key="view" contentMode="scaleToFill" id="746-dF-mAd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i0N-xY-ArO">
+                                <rect key="frame" x="65" y="168" width="69" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFq-DH-tf2">
+                                <rect key="frame" x="65" y="235" width="69" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNA-nD-uRi">
+                                <rect key="frame" x="265" y="168" width="69" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sre-5z-1Vf">
+                                <rect key="frame" x="265" y="235" width="69" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m4K-Of-YYS">
+                                <rect key="frame" x="162" y="387" width="69" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBk-0K-0Ya">
+                                <rect key="frame" x="16" y="387" width="69" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0M-x4-YbN" customClass="ControladorPantallaCitas" customModule="boceto_1" customModuleProvider="target">
+                                <rect key="frame" x="82" y="454" width="227" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dcN-o0-u62">
+                                <rect key="frame" x="308" y="387" width="69" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="43v-CF-xQv"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZEZ-ic-D7Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGS-4L-exN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="709"/>
+            <point key="canvasLocation" x="-51.145038167938928" y="708.45070422535218"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Cita-->
         <scene sceneID="GZM-2H-fPL">
             <objects>
-                <viewController id="V5a-hj-DZe" sceneMemberID="viewController">
+                <viewController id="V5a-hj-DZe" customClass="ControladorPantallaCita" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="umv-Z7-8vv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-80-bBe">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-80-bBe">
                                 <rect key="frame" x="44" y="196" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-93-go4">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-93-go4">
                                 <rect key="frame" x="16" y="629" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sdm-qr-SK2">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sdm-qr-SK2">
                                 <rect key="frame" x="72" y="572" width="57" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-t3-C2U">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-t3-C2U">
                                 <rect key="frame" x="320" y="629" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-Vy-usT">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-Vy-usT">
                                 <rect key="frame" x="16" y="355" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="iUo-zV-JBK"/>
-                                    <constraint firstAttribute="width" constant="57" id="jTu-UN-ZjN"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57" id="qxC-bS-9cF"/>
-                                    <constraint firstAttribute="height" constant="57" id="wHl-2U-SrC"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-3a-hOG">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-3a-hOG">
                                 <rect key="frame" x="320" y="355" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="Ehl-Ed-nM7"/>
-                                    <constraint firstAttribute="width" constant="57" id="q8x-bp-acV"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWK-2P-Ubf">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWK-2P-Ubf">
                                 <rect key="frame" x="277" y="196" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Thu-mU-I6H"/>
-                                    <constraint firstAttribute="height" constant="70" id="gcr-iK-YNg"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhb-se-S1r">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhb-se-S1r">
                                 <rect key="frame" x="168" y="300" width="57" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1jt-pY-Xgv">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1jt-pY-Xgv">
                                 <rect key="frame" x="105" y="355" width="183" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbQ-Oi-YDl">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbQ-Oi-YDl">
                                 <rect key="frame" x="265" y="572" width="57" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khr-5d-ln2">
+                                <rect key="frame" x="150" y="127" width="98" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pica Pi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-dI-dND">
+                                <rect key="frame" x="135" y="717" width="129" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KoA-ed-ze6"/>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.83921568627450982" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="o8Y-Vy-usT" firstAttribute="leading" secondItem="KoA-ed-ze6" secondAttribute="leading" constant="16" id="6qU-rM-AWi"/>
-                            <constraint firstItem="UKw-80-bBe" firstAttribute="leading" secondItem="KoA-ed-ze6" secondAttribute="leading" constant="44" id="9VV-W5-bBe"/>
-                            <constraint firstItem="1jt-pY-Xgv" firstAttribute="centerY" secondItem="KoA-ed-ze6" secondAttribute="centerY" id="D4c-q0-Tan"/>
-                            <constraint firstItem="HbQ-Oi-YDl" firstAttribute="centerY" secondItem="KoA-ed-ze6" secondAttribute="centerY" id="GyE-Pl-6eK"/>
-                            <constraint firstItem="uhb-se-S1r" firstAttribute="centerY" secondItem="KoA-ed-ze6" secondAttribute="centerY" id="Hiz-vf-Do9"/>
-                            <constraint firstItem="Sdm-qr-SK2" firstAttribute="leading" secondItem="KoA-ed-ze6" secondAttribute="leading" constant="72" id="Ht0-0V-lzU"/>
-                            <constraint firstItem="uhb-se-S1r" firstAttribute="centerX" secondItem="KoA-ed-ze6" secondAttribute="centerX" id="JMX-qB-n4v"/>
-                            <constraint firstItem="KoA-ed-ze6" firstAttribute="trailing" secondItem="aE5-3a-hOG" secondAttribute="trailing" constant="16" id="KlQ-6e-oHL"/>
-                            <constraint firstItem="1jt-pY-Xgv" firstAttribute="centerX" secondItem="KoA-ed-ze6" secondAttribute="centerX" id="SfL-n8-C40"/>
-                            <constraint firstItem="KoA-ed-ze6" firstAttribute="trailing" secondItem="dWK-2P-Ubf" secondAttribute="trailing" constant="46" id="X7s-kb-W2h"/>
-                            <constraint firstItem="Rwz-93-go4" firstAttribute="leading" secondItem="KoA-ed-ze6" secondAttribute="leading" constant="16" id="aqD-r3-hCF"/>
-                            <constraint firstItem="oZi-t3-C2U" firstAttribute="centerY" secondItem="KoA-ed-ze6" secondAttribute="centerY" id="daf-9a-WCy"/>
-                            <constraint firstItem="Rwz-93-go4" firstAttribute="centerY" secondItem="KoA-ed-ze6" secondAttribute="centerY" id="feb-ov-f5b"/>
-                            <constraint firstItem="KoA-ed-ze6" firstAttribute="trailing" secondItem="HbQ-Oi-YDl" secondAttribute="trailing" constant="71" id="fnc-Ss-9Ih"/>
-                            <constraint firstItem="Sdm-qr-SK2" firstAttribute="centerY" secondItem="KoA-ed-ze6" secondAttribute="centerY" id="ftv-FU-uKw"/>
-                            <constraint firstItem="KoA-ed-ze6" firstAttribute="trailing" secondItem="oZi-t3-C2U" secondAttribute="trailing" constant="16" id="kxT-mb-lZp"/>
-                            <constraint firstItem="dWK-2P-Ubf" firstAttribute="top" secondItem="KoA-ed-ze6" secondAttribute="top" constant="196" id="nHJ-ko-Rv3"/>
-                            <constraint firstItem="UKw-80-bBe" firstAttribute="top" secondItem="KoA-ed-ze6" secondAttribute="top" constant="196" id="xc7-mw-hLc"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JW7-Nr-EsA"/>
+                    <connections>
+                        <outlet property="nombre_de_quien_lo_dijo" destination="khr-5d-ln2" id="gX3-BW-AHh"/>
+                        <outlet property="que_dijo_muro_texto" destination="HhP-dI-dND" id="ohr-Y4-1Ip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cr8-VS-bew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,14 +260,17 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
