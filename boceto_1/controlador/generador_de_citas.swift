@@ -39,5 +39,9 @@ class GeneradorDeCitas{
                           quien_lo_dijo: "Guardia"
         )
     }
-    
+    func obtener_cita()-> Cita{
+        var cita_para_regresar : Cita
+        cita_para_regresar = citas_creadas[Int.random(in: 0...citas_creadas.count-1)]
+        return cita_para_regresar
+    }
 }
