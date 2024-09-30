@@ -14,6 +14,7 @@ class ControladorPantallaCitas: UIViewController {
     @IBOutlet weak var que_dijo_muro_texto: UILabel!
     
 
+    @IBOutlet weak var regresar_inicio: UIButton!
     var cita_actual: Cita
     
     required init?(coder: NSCoder) {

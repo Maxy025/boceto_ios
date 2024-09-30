@@ -61,16 +61,25 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="V5a-hj-DZe" kind="showDetail" destinationCreationSelector="al_abrir_pantalla_citas:" id="WfH-Wr-e7q"/>
+                                            <segue destination="V5a-hj-DZe" kind="presentation" destinationCreationSelector="al_abrir_pantalla_citas:" modalPresentationStyle="fullScreen" id="WfH-Wr-e7q"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-4x-nX7">
-                                        <rect key="frame" x="7" y="166" width="75" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iv2-gL-l8C">
+                                        <rect key="frame" x="8" y="182" width="75" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="DyN-VA-enw" kind="showDetail" id="mSm-0C-Mch"/>
+                                            <segue destination="DyN-VA-enw" kind="showDetail" id="MLd-w5-tdI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUR-vg-ZWm">
+                                        <rect key="frame" x="8" y="305" width="75" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <segue destination="iRp-vr-358" kind="show" id="x4A-uu-a7h"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -90,30 +99,6 @@
                                     <constraint firstAttribute="height" constant="100" id="xTc-9J-Ptv"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" restorationIdentifier="texto_cita_nombre" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KV5-NE-aPX">
-                                <rect key="frame" x="142" y="187" width="109" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="texfield_nombre:" destination="wmc-K0-c6E" eventType="editingDidEnd" id="nuh-KE-8n6"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" restorationIdentifier="texto_cita" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-2H-AE4">
-                                <rect key="frame" x="16" y="678" width="361" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textfield_cita:" destination="wmc-K0-c6E" eventType="editingDidEnd" id="WBJ-qP-9ZG"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="texto_cita" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XP-Sw-wMx">
-                                <rect key="frame" x="169" y="641" width="55" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cita"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0E-oS-djG">
                                 <rect key="frame" x="154" y="144" width="86" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,20 +124,18 @@
                             <constraint firstItem="ato-pd-0Eb" firstAttribute="centerY" secondItem="nKt-68-V00" secondAttribute="centerY" id="wWh-Qs-95c"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="texfield_cita" destination="MNm-2H-AE4" id="zBA-iY-tke"/>
-                        <outlet property="textfield_nombre" destination="KV5-NE-aPX" id="oSX-Ng-i0M"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="GX6-Zr-7tK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="wmc-K0-c6E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-60.305343511450381" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Citas-->
         <scene sceneID="5nD-SX-diW">
             <objects>
-                <viewController id="DyN-VA-enw" sceneMemberID="viewController">
+                <exit id="a6k-tJ-ZLu" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGS-4L-exN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="DyN-VA-enw" customClass="ControladorPantallaCitas" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="746-dF-mAd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,22 +194,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sns-E3-sHk">
+                                <rect key="frame" x="16" y="75" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="a6k-tJ-ZLu" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="NZd-Wy-amT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="43v-CF-xQv"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZEZ-ic-D7Y"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kGS-4L-exN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51.145038167938928" y="708.45070422535218"/>
+            <point key="canvasLocation" x="-60" y="843"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0v6-U5-vzN">
+            <objects>
+                <viewController id="iRp-vr-358" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T40-pJ-P7w">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kf8-NI-3gO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KkS-83-Dyg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXy-It-DWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="813"/>
         </scene>
         <!--Controlador Pantalla Cita-->
         <scene sceneID="GZM-2H-fPL">
             <objects>
                 <viewController id="V5a-hj-DZe" customClass="ControladorPantallaCita" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="umv-Z7-8vv">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-80-bBe">
@@ -293,6 +300,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvF-hb-xKG">
+                                <rect key="frame" x="16" y="60" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="pvf-Ov-eAp" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="hss-DU-8Po"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KoA-ed-ze6"/>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.83921568627450982" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -304,8 +320,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cr8-VS-bew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pvf-Ov-eAp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="773.28244274809163" y="19.718309859154932"/>
+            <point key="canvasLocation" x="1084.7328244274809" y="10.563380281690142"/>
         </scene>
     </scenes>
     <resources>

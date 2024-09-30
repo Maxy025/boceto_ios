@@ -24,7 +24,22 @@ class ViewController: UIViewController {
     @IBSegueAction func al_abrir_pantalla_citas(_ coder: NSCoder) -> ControladorPantallaCitas? {
         return ControladorPantallaCitas(cita_para_citar: citas_disponibles.obtener_cita(), coder: coder)
     }
+    
 
+    @IBAction func al_regresar_boton(_ sender: Any) {
+    }
+
+    @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue){ 
+        let pantalla_citas = segue.source as? ControladorPantallaCitas
+        print(pantalla_citas?.cita_actual.texto)
+        
+        if let pantalla_citas = segue.source as? ControladorPantallaCitas{
+            citas_disponibles.agregar_cita(pantalla_citas.cita_actual.texto, quien_lo_dijo: pantalla_citas.cita_actual.nombre)
+        }
+        else{
+            print("Eso no era un objeto de tipo <ControladorPantallCitas>")
+        }
+    }
     
 }
 
