@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textfield_nombre: UITextField!
     @IBOutlet weak var texfield_cita: UITextField!
     
+    @IBOutlet weak var labelcito: UILabel!
     var cita_para_enviar: Cita = Cita(quien_lo_digo: "Pikachu", que_dijo: "Pikaaaa")
     
     var citas_disponibles : GeneradorDeCitas = GeneradorDeCitas()
@@ -18,7 +19,12 @@ class ViewController: UIViewController {
 
         citas_disponibles.generar_citas_falsas()
         super.viewDidLoad()
-
+        
+        actualizar_cantidad()
+    }
+    
+    func actualizar_cantidad(){
+        labelcito.text = String(citas_disponibles.citas_creadas.count)
     }
 
     @IBSegueAction func al_abrir_pantalla_citas(_ coder: NSCoder) -> ControladorPantallaCitas? {
@@ -29,17 +35,15 @@ class ViewController: UIViewController {
     @IBAction func al_regresar_boton(_ sender: Any) {
     }
 
-    @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue){ 
-        let pantalla_citas = segue.source as? ControladorPantallaCitas
-        print(pantalla_citas?.cita_actual.texto)
-        
-        if let pantalla_citas = segue.source as? ControladorPantallaCitas{
-            citas_disponibles.agregar_cita(pantalla_citas.cita_actual.texto, quien_lo_dijo: pantalla_citas.cita_actual.nombre)
+    @IBAction func voler_a_pantalla_inicio(segue: UIStoryboardSegue){
+            if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCita{
+                citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            }
+            
+            
+            actualizar_cantidad()
+            
         }
-        else{
-            print("Eso no era un objeto de tipo <ControladorPantallCitas>")
-        }
-    }
     
 }
 
