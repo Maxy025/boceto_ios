@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         actualizar_cantidad()
+        
+       
+        
     }
     
     func actualizar_cantidad(){
@@ -36,14 +39,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func voler_a_pantalla_inicio(segue: UIStoryboardSegue){
-            if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCita{
-                citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
-            }
-            
-            
-            actualizar_cantidad()
-            
+        if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCita,
+           let cita = pantalla_agregar_citas.cita_creada {
+            citas_disponibles.agregar_cita(cita)
+        } else {
+            // Manejar el caso cuando no se creó una cita
+            print("No se creó una cita")
         }
+    }
     
 }
 
