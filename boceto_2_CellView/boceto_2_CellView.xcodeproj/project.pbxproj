@@ -17,6 +17,7 @@
 		FB408F8F2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F8E2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift */; };
 		FB408F9E2CB4375F00739678 /* ControladorPantallaDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */; };
 		FB408FA02CB43D3300739678 /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */; };
+		FBD026E72CB6D7BB00A7DFEF /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD026E62CB6D7BB00A7DFEF /* post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FB408F8E2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDeColeccion.swift; sourceTree = "<group>"; };
 		FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
+		FBD026E62CB6D7BB00A7DFEF /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		FB408F5F2CB4339B00739678 = {
 			isa = PBXGroup;
 			children = (
+				FBD026E52CB6D74600A7DFEF /* modelos */,
 				FB408F6A2CB4339B00739678 /* boceto_2_CellView */,
 				FB408F812CB4339B00739678 /* boceto_2_CellViewTests */,
 				FB408F8B2CB4339B00739678 /* boceto_2_CellViewUITests */,
@@ -144,6 +147,14 @@
 				FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */,
 			);
 			path = vista_de_celdas;
+			sourceTree = "<group>";
+		};
+		FBD026E52CB6D74600A7DFEF /* modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FBD026E62CB6D7BB00A7DFEF /* post.swift */,
+			);
+			path = modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB408F9E2CB4375F00739678 /* ControladorPantallaDeColeccion.swift in Sources */,
+				FBD026E72CB6D7BB00A7DFEF /* post.swift in Sources */,
 				FB408F6C2CB4339B00739678 /* AppDelegate.swift in Sources */,
 				FB408FA02CB43D3300739678 /* VistaDeCelda.swift in Sources */,
 				FB408F6E2CB4339B00739678 /* SceneDelegate.swift in Sources */,
