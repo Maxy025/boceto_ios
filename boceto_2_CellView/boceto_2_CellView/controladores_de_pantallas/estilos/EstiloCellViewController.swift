@@ -1,0 +1,38 @@
+//
+//  EstiloCellViewController.swift
+//  boceto_2_CellView
+//
+//  Created by alumno on 10/11/24.
+//
+
+import UIKit
+
+extension ControladorPantallaDeColeccion:UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var ancho = self.collectionView.frame.width
+        var largo = self.collectionView.frame.height
+        
+        ancho = ancho / 2
+        largo = ancho * 0.5
+        
+        
+        return CGSize(width: ancho, height:largo)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        var margin = CGFloat(25)
+        
+        return UIEdgeInsets(top:margin, left: margin, bottom: margin, right: margin)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGSize {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGSize {
+        var ancho = self.collectionView.frame.width
+        ancho = ancho / 3.5
+        
+        return ancho
+    }
+}

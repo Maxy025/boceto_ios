@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB39E8432CB9841600B2F2A2 /* ControladorPantallaDelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39E8422CB9841600B2F2A2 /* ControladorPantallaDelPost.swift */; };
+		FB39E8462CB9844500B2F2A2 /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39E8452CB9844500B2F2A2 /* mod_navegador_principal.swift */; };
+		FB39E8482CB9850000B2F2A2 /* EstiloCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39E8472CB9850000B2F2A2 /* EstiloCellViewController.swift */; };
 		FB408F6C2CB4339B00739678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F6B2CB4339B00739678 /* AppDelegate.swift */; };
 		FB408F6E2CB4339B00739678 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F6D2CB4339B00739678 /* SceneDelegate.swift */; };
 		FB408F732CB4339B00739678 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB408F722CB4339B00739678 /* Base */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB39E8422CB9841600B2F2A2 /* ControladorPantallaDelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDelPost.swift; sourceTree = "<group>"; };
+		FB39E8452CB9844500B2F2A2 /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
+		FB39E8472CB9850000B2F2A2 /* EstiloCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewController.swift; sourceTree = "<group>"; };
 		FB408F682CB4339B00739678 /* boceto_2_CellView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_2_CellView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB408F6B2CB4339B00739678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB408F6D2CB4339B00739678 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +86,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB39E8412CB97A3A00B2F2A2 /* proveedor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = proveedor;
+			sourceTree = "<group>";
+		};
+		FB39E8442CB9842D00B2F2A2 /* estilos */ = {
+			isa = PBXGroup;
+			children = (
+				FB39E8452CB9844500B2F2A2 /* mod_navegador_principal.swift */,
+				FB39E8472CB9850000B2F2A2 /* EstiloCellViewController.swift */,
+			);
+			path = estilos;
+			sourceTree = "<group>";
+		};
 		FB408F5F2CB4339B00739678 = {
 			isa = PBXGroup;
 			children = (
+				FB39E8412CB97A3A00B2F2A2 /* proveedor */,
 				FBD026E52CB6D74600A7DFEF /* modelos */,
 				FB408F6A2CB4339B00739678 /* boceto_2_CellView */,
 				FB408F812CB4339B00739678 /* boceto_2_CellViewTests */,
@@ -135,7 +158,9 @@
 		FB408F9B2CB4368000739678 /* controladores_de_pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				FB39E8442CB9842D00B2F2A2 /* estilos */,
 				FB408F9C2CB436A300739678 /* vista_de_celdas */,
+				FB39E8422CB9841600B2F2A2 /* ControladorPantallaDelPost.swift */,
 			);
 			path = controladores_de_pantallas;
 			sourceTree = "<group>";
@@ -288,10 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB39E8482CB9850000B2F2A2 /* EstiloCellViewController.swift in Sources */,
+				FB39E8462CB9844500B2F2A2 /* mod_navegador_principal.swift in Sources */,
 				FB408F9E2CB4375F00739678 /* ControladorPantallaDeColeccion.swift in Sources */,
 				FBD026E72CB6D7BB00A7DFEF /* post.swift in Sources */,
 				FB408F6C2CB4339B00739678 /* AppDelegate.swift in Sources */,
 				FB408FA02CB43D3300739678 /* VistaDeCelda.swift in Sources */,
+				FB39E8432CB9841600B2F2A2 /* ControladorPantallaDelPost.swift in Sources */,
 				FB408F6E2CB4339B00739678 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
