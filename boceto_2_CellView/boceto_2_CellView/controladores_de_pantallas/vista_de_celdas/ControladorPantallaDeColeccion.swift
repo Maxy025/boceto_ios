@@ -68,7 +68,7 @@ class ControladorPantallaDeColeccion: UICollectionViewController {
         //celda.tintColor = UIColor.green
         
         celda.titulo.text = self.lista_de_publicaciones[indexPath.item].title
-        celda.cuerpo.text = self.lista_de_publicaciones[indexPath.item].body
+        celda.etiqueta.text = self.lista_de_publicaciones[indexPath.item].body
 
         // print(self.lista_de_publicaciones)
         

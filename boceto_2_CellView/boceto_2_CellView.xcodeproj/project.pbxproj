@@ -20,6 +20,8 @@
 		FB408F8F2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F8E2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift */; };
 		FB408F9E2CB4375F00739678 /* ControladorPantallaDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */; };
 		FB408FA02CB43D3300739678 /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */; };
+		FB6B4EB02CBD6C8C00EBA638 /* VistasDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B4EAF2CBD6C8C00EBA638 /* VistasDeCelda.swift */; };
+		FB6B4EB22CBD796100EBA638 /* proveedor_publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B4EB12CBD796100EBA638 /* proveedor_publicaciones.swift */; };
 		FBD026E72CB6D7BB00A7DFEF /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD026E62CB6D7BB00A7DFEF /* post.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		FB408F8E2CB4339B00739678 /* boceto_2_CellViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDeColeccion.swift; sourceTree = "<group>"; };
 		FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
+		FB6B4EAF2CBD6C8C00EBA638 /* VistasDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistasDeCelda.swift; sourceTree = "<group>"; };
+		FB6B4EB12CBD796100EBA638 /* proveedor_publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = proveedor_publicaciones.swift; path = boceto_2_CellView/controladores_de_pantallas/vista_de_celdas/proveedor_publicaciones.swift; sourceTree = SOURCE_ROOT; };
 		FBD026E62CB6D7BB00A7DFEF /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,7 @@
 		FB39E8412CB97A3A00B2F2A2 /* proveedor */ = {
 			isa = PBXGroup;
 			children = (
+				FB6B4EB12CBD796100EBA638 /* proveedor_publicaciones.swift */,
 			);
 			path = proveedor;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			children = (
 				FB408F9D2CB4375F00739678 /* ControladorPantallaDeColeccion.swift */,
 				FB408F9F2CB43D3300739678 /* VistaDeCelda.swift */,
+				FB6B4EAF2CBD6C8C00EBA638 /* VistasDeCelda.swift */,
 			);
 			path = vista_de_celdas;
 			sourceTree = "<group>";
@@ -314,10 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB39E8482CB9850000B2F2A2 /* EstiloCellViewController.swift in Sources */,
+				FB6B4EB02CBD6C8C00EBA638 /* VistasDeCelda.swift in Sources */,
 				FB39E8462CB9844500B2F2A2 /* mod_navegador_principal.swift in Sources */,
 				FB408F9E2CB4375F00739678 /* ControladorPantallaDeColeccion.swift in Sources */,
 				FBD026E72CB6D7BB00A7DFEF /* post.swift in Sources */,
 				FB408F6C2CB4339B00739678 /* AppDelegate.swift in Sources */,
+				FB6B4EB22CBD796100EBA638 /* proveedor_publicaciones.swift in Sources */,
 				FB408FA02CB43D3300739678 /* VistaDeCelda.swift in Sources */,
 				FB39E8432CB9841600B2F2A2 /* ControladorPantallaDelPost.swift in Sources */,
 				FB408F6E2CB4339B00739678 /* SceneDelegate.swift in Sources */,

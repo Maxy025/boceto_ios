@@ -10,6 +10,5 @@ import UIKit
 class VistaDeCelda: UICollectionViewCell {
     @IBOutlet weak var titulo: UILabel!
     
-    
-    @IBOutlet weak var cuerpo: UILabel!
+    @IBOutlet weak var etiqueta: UILabel!
 }

@@ -45,24 +45,33 @@
                                     <rect key="frame" x="0.0" y="0.0" width="296" height="281"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-rN-X5Q">
-                                            <rect key="frame" x="127" y="172" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-rN-X5Q">
+                                            <rect key="frame" x="127.33333333333333" y="130.33333333333334" width="41.333333333333329" height="20.333333333333343"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOf-TZ-tzV">
-                                            <rect key="frame" x="126" y="72" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOf-TZ-tzV">
+                                            <rect key="frame" x="38" y="54" width="217" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Li8-rN-X5Q" firstAttribute="centerX" secondItem="8P5-q1-mbR" secondAttribute="centerX" id="1P8-r6-Shw"/>
+                                        <constraint firstAttribute="trailing" secondItem="IOf-TZ-tzV" secondAttribute="trailing" constant="41" id="AAb-vu-f5U"/>
+                                        <constraint firstItem="Li8-rN-X5Q" firstAttribute="centerY" secondItem="8P5-q1-mbR" secondAttribute="centerY" id="J9D-Yc-O0S"/>
+                                        <constraint firstItem="IOf-TZ-tzV" firstAttribute="leading" secondItem="8P5-q1-mbR" secondAttribute="leading" constant="38" id="ibE-b1-YqJ"/>
+                                        <constraint firstItem="IOf-TZ-tzV" firstAttribute="top" secondItem="8P5-q1-mbR" secondAttribute="top" constant="54" id="ibu-4H-IdQ"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.1264793417" green="0.77201474339999998" blue="0.84132434219999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="customSize" width="296" height="281"/>
+                                <connections>
+                                    <outlet property="etiqueta" destination="Li8-rN-X5Q" id="Oer-gr-HzB"/>
+                                    <outlet property="titulo" destination="IOf-TZ-tzV" id="Ycv-6m-jX0"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
