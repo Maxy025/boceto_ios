@@ -77,6 +77,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
             print(publicacion?.body)
             
         }
+
     func dibujar_usuario(){
         guard let usuario_actual = self.usuario else {
             return
@@ -85,6 +86,8 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         
         nombre_de_usuario.text = usuario_actual.username
     }
+    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return lista_de_comentarios.count
     }
@@ -108,5 +111,6 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
             // Pass the selected object to the new view controller.
         }
         */
-
+    
+  
     }
