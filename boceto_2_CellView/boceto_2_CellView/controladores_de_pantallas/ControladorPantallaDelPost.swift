@@ -16,6 +16,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var titulo_de_pubicacion: UILabel!
     @IBOutlet weak var seccion_comentarios: UICollectionView!
     @IBOutlet weak var cuerpo_de_publicacion: UILabel!
+    @IBOutlet weak var cuerpo_comentario: UILabel!
     public var id_publicacion: Int?
     
         private var publicacion: Publicacion?
@@ -98,7 +99,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         //celda.tintColor = UIColor.green
         
         celda.tintColor = UIColor.green
-        // print(self.lista_de_publicaciones)
+        print(self.lista_de_comentarios)
         
         return celda
     }
